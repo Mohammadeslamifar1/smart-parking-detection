@@ -30,7 +30,7 @@ The project includes both a Python script and a Streamlit web application.
 8. Allows users to download the result image
 9. Includes a manual parking space selection tool
 
-## Technologies Used
+## Tech Stack
 
 Python  
 OpenCV  
