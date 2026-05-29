@@ -8,6 +8,16 @@ This project uses a pretrained YOLO object detection model to detect vehicles in
 
 The project includes both a Python script and a Streamlit web application.
 
+## Demo
+
+### Streamlit App
+
+![Streamlit App](screenshots/streamlit_app(1)(2).jpg)
+
+### Detection Result
+
+![Detection Result](screenshots/detection_result.png)
+
 ## Features
 
 1. Detects vehicles such as cars, trucks, and buses
