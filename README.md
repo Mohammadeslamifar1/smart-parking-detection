@@ -20,8 +20,8 @@ The project includes Python scripts for image and video processing, plus a Strea
 
 ### Streamlit App
 
-![Streamlit App](screenshots/streamlit_app_first.png)
-![Streamlit App](screenshots/streamlit_app_second.png)
+![Streamlit App](screenshots/streamlit_app_first.jpg)
+![Streamlit App](screenshots/streamlit_app_second.jpg)
 
 ### YOLO Based Normal Angle Result
 
@@ -33,7 +33,7 @@ The project includes Python scripts for image and video processing, plus a Strea
 
 ### Video Processing Preview
 
-![Video Processing Preview](screenshots/streamlit_result_top_angle.mp4)
+[Watch the processed parking video](demo/streamlit_result_top_angle.mp4)
 
 ## Features
 
