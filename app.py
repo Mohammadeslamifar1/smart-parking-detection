@@ -6,7 +6,8 @@ import streamlit as st
 from PIL import Image
 from ultralytics import YOLO
 
-from src.parking_spaces import PARKING_SPACES
+from src.parking_configs.normal_angle_spaces import PARKING_SPACES as NORMAL_SPACES
+from src.parking_configs.top_down_spaces import PARKING_SPACES as TOP_DOWN_SPACES
 from src.parking_detector import detect_parking_spaces
 from src.parking_detector_pixels import detect_parking_spaces_by_pixels
 
@@ -130,6 +131,16 @@ st.caption(
 
 st.sidebar.title("Project Settings")
 
+camera_view = st.sidebar.selectbox(
+    "Camera view",
+    ["Normal Angle", "Top Down Fixed Camera"],
+)
+
+if camera_view == "Normal Angle":
+    selected_spaces = NORMAL_SPACES
+else:
+    selected_spaces = TOP_DOWN_SPACES
+
 detection_method = st.sidebar.selectbox(
     "Detection method",
     ["Pixel Based", "YOLO Based"],
@@ -196,14 +207,14 @@ if uploaded_file is not None:
             result_image, total_count, empty_count, occupied_count = detect_parking_spaces(
                 image=image_np,
                 model=model,
-                parking_spaces=PARKING_SPACES,
+                parking_spaces=selected_spaces,
                 confidence_threshold=confidence_threshold,
                 overlap_threshold=overlap_threshold,
             )
         else:
             result_image, total_count, empty_count, occupied_count = detect_parking_spaces_by_pixels(
                 image=image_np,
-                parking_spaces=PARKING_SPACES,
+                parking_spaces=selected_spaces,
                 pixel_threshold=pixel_threshold,
             )
 
@@ -248,7 +259,7 @@ if uploaded_file is not None:
             output_video_path, total_count, empty_count, occupied_count = process_video(
                 video_file=uploaded_file,
                 model=model,
-                parking_spaces=PARKING_SPACES,
+                parking_spaces=selected_spaces,
                 detection_method=detection_method,
                 confidence_threshold=confidence_threshold,
                 overlap_threshold=overlap_threshold,

@@ -1,7 +1,7 @@
 import cv2
 from ultralytics import YOLO
 
-from parking_spaces import PARKING_SPACES
+from parking_configs.normal_angle_spaces import PARKING_SPACES
 from parking_detector import detect_parking_spaces
 
 

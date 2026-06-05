@@ -1,6 +1,6 @@
 import cv2
 
-from parking_spaces import PARKING_SPACES
+from parking_configs.top_down_spaces import PARKING_SPACES
 from parking_detector_pixels import detect_parking_spaces_by_pixels
 
 
