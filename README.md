@@ -20,11 +20,20 @@ The project includes Python scripts for image and video processing, plus a Strea
 
 ### Streamlit App
 
-![Streamlit App](screenshots/streamlit_app(1)(2).jpg)
+![Streamlit App](screenshots/streamlit_app(1).png)
+![Streamlit App](screenshots/streamlit_app(2).png)
 
-### Detection Result
+### YOLO Based Normal Angle Result
 
-![Detection Result](screenshots/detection_result.png)
+![YOLO Based Result](screenshots/detection_result.png)
+
+### Pixel Based Top Down Result
+
+![Pixel Based Result](screenshots/streamlit_result_top_angle (1).jpg)
+
+### Video Processing Preview
+
+![Video Processing Preview](screenshots/streamlit_result_top_angle (1).mp4)
 
 ## Features
 
