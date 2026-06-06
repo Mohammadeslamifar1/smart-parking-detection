@@ -32,7 +32,7 @@ The project includes Python scripts for image and video processing, plus a Strea
 
 ### Video Processing Preview
 
-[Watch the processed parking video](demo/streamlit_result_top_angle.mp4)
+[Watch the processed parking video](demo/streamlit_video_result.mp4)
 
 ## Features
 
